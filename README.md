@@ -7,9 +7,11 @@ $a = '#include <stdio.h>int main() {
 }';
 
 //encode for store database
+
 $b = base64_encode($a);
 
 //decode for view the orginal formate
+
 $c = base64_decode($b);
 
 dd( $a, $b, $c);
